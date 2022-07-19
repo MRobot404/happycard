@@ -1,14 +1,15 @@
-div{
-    margin-top: 12rem;
+datos{
+   padding: 10rem;
 }
- input{
-    cursor: pointer;
- }
- h4{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
- }
- a{
-    font-family: 'Jua', sans-serif;
-    font-size: 1.2rem;
- }
+input{
+   cursor: pointer;
+   text-align: center;
+}
+h4{
+   font-family: 'Roboto', sans-serif;
+   font-size: 2rem;
+}
+a{
+   font-family: 'Jua', sans-serif;
+   font-size: 1.2rem;
+}

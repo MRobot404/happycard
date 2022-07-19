@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" type="css">
+    <link href="style.css" type="css" />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -12,26 +12,41 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <title>Carta de cumpleaños</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   </head>
   <body>
-        <div class="container">
-            <div class="row">
-              <div class="col align-self-start">
-               
-              </div>
-              <div class="col align-self-center">
-                <div class="card p-5 border border-success">
-                    <h4 class="animate__animated animate__fadeInDown">Bienvenido</h4>
-                    <h4  class="animate__animated animate__fadeInDown">Escribe tu nickname</h4>
-                    <input type="text" class="form-control " [(ngModel)]="User.name" >
-                    <a href=""  class="btn btn-warning bi bi-door-open-fill btn-block mt-3 animate__animated  animate__jackInTheBox" [routerLink]="['/chat', User.name ]"></a>
-                  </div>
-              </div>
-              <div class="col align-self-end">
-               
-              </div>
-            </div>
+  
+<div class="container mx-auto animate__animated  animate__zoomIn">
+  <div class="row align-items-center" style="width: 1300px; height:600px">
+    <div class="col">
+    </div>
+    <div class="col">
+      <div id="div-1">
+        <div class="card p-5 border border-success shadow p-3 mb-5 bg-body rounded">
+          <form name="registro">
+          <h4 class="animate__animated animate__fadeInDown"></h4>
+          <h4  class="animate__animated animate__fadeInDown">Escribe tu nombre:</h4>
+          <input type="text" class="form-control" placeholder="Aquí mero xd" type="text" name="nombre" id="nombre" onkeyup="obtenerdatos()" required >
+          <a  class="btn btn-info bi bi-door-open-fill btn-block mt-3 animate__animated  animate__jackInTheBox" onclick="prueba()"><i class="material-icons">cake</i></a>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <div id="datos" class="shadow-sm p-3 mb-5 bg-body rounded text-center fs-2 fw-semibold font-monospace animate__animated animate__bounce text-info bg-dark"></div>
+  <script  src="main.js"></script>
   </body>
 </html>
